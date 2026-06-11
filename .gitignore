@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# local secrets
+.env
+.env.local
+
+# sandbox / scratch test artifacts
+*.mjs
+.fuse_hidden*
+noprut
+noprut.exe

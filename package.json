@@ -1,0 +1,81 @@
+{
+  "name": "noprut-cli",
+  "version": "2.0.17",
+  "description": "NOPRUT CLI v2 - a beautiful, fully agentic AI coding assistant for your terminal. Made in Thailand.",
+  "type": "module",
+  "bin": {
+    "noprut": "bin/cli.cjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "LICENSE",
+    "README.md",
+    ".env.example"
+  ],
+  "scripts": {
+    "dev": "node bin/cli.cjs",
+    "start": "node bin/cli.cjs",
+    "typecheck": "tsc --noEmit",
+    "build": "bun run src/scripts/release.ts",
+    "build:only": "bun build src/index.ts --compile --outfile noprut-cli",
+    "release:patch": "bun run src/scripts/release.ts patch",
+    "release:minor": "bun run src/scripts/release.ts minor",
+    "release:major": "bun run src/scripts/release.ts major"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Noprut AI (https://www.noprut-ai.dev)",
+  "license": "MIT",
+  "keywords": [
+    "noprut",
+    "ai",
+    "cli",
+    "agent",
+    "code-generation",
+    "tui",
+    "terminal",
+    "thailand",
+    "assistant",
+    "developer-tools",
+    "productivity",
+    "llm",
+    "gpt",
+    "openai",
+    "deepseek",
+    "claude",
+    "anthropic",
+    "gemini",
+    "coding-assistant",
+    "pair-programming",
+    "copilot",
+    "agentic",
+    "auto-coder",
+    "code-editor",
+    "repl",
+    "typescript",
+    "node",
+    "bun"
+  ],
+  "dependencies": {
+    "@clack/prompts": "^1.5.1",
+    "@types/ink": "^0.5.2",
+    "@types/react": "^19.2.17",
+    "chalk": "^5.6.2",
+    "commander": "^15.0.0",
+    "ink": "^7.0.5",
+    "ora": "^9.4.0",
+    "react": "^19.2.7",
+    "string-width": "^8.2.1",
+    "tsx": "^4.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  }
+}

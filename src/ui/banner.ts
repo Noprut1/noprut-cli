@@ -20,7 +20,7 @@ const ART = [
     
 ];
 
-const noprut = gradient([C.cyan, C.violet, C.pink]);
+const noprut = gradient([C.violet]);
 
 export function showBanner(version: string): void {
     const w = termWidth();
